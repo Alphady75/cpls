@@ -1,0 +1,4 @@
+<nav class="nav nav-pills border-0">
+  <a class="nav-link {{ app.request.attributes.get('_route') == 'admin_convertis_index' ? 'text-light bg-success border-0' : 'btn-light' }} mr-3 h4" href="{{ path('admin_convertis_index') }}">Inscriptions</a>
+  <a class="nav-link {{ app.request.attributes.get('_route') == 'admin_liste_attente_index' ? 'text-light bg-success border-0' : 'btn-light' }} h4" href="{{ path('admin_liste_attente_index') }}">Liste d'attente</a>
+</nav>
